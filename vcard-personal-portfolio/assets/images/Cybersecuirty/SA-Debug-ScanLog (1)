@@ -1,0 +1,639 @@
+Checks for ASP.net Elmah Logger
+------------------------
+
+--2025-01-05 01:05:38--  http://starbucks.nl/elmah.axd
+Resolving starbucks.nl (starbucks.nl)... 172.64.147.123, 104.18.40.133, 2606:4700:4400::6812:2885, ...
+Connecting to starbucks.nl (starbucks.nl)|172.64.147.123|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.starbucks.nl/elmah.axd [following]
+--2025-01-05 01:05:38--  https://www.starbucks.nl/elmah.axd
+Resolving www.starbucks.nl (www.starbucks.nl)... 172.64.147.123, 104.18.40.133, 2606:4700:4400::6812:2885, ...
+Connecting to www.starbucks.nl (www.starbucks.nl)|172.64.147.123|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-01-05 01:05:39 ERROR 404: Not Found.
+
+
+
+Nmap - Checks for ORACLE DB
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:05 EST
+Nmap done: 1 IP address (1 host up) scanned in 2.16 seconds
+
+
+Nmap [LOGJAM] - Checks for LOGJAM Vulnerability.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:05 EST
+Nmap scan report for starbucks.nl (172.64.147.123)
+Host is up (0.011s latency).
+Other addresses for starbucks.nl (not scanned): 104.18.40.133 2606:4700:4400::6812:2885 2606:4700:4400::ac40:937b
+
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.65 seconds
+
+
+Nmap [Heartbleed] - Checks only for Heartbleed Vulnerability.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:05 EST
+Nmap scan report for starbucks.nl (104.18.40.133)
+Host is up (0.0075s latency).
+Other addresses for starbucks.nl (not scanned): 172.64.147.123 2606:4700:4400::ac40:937b 2606:4700:4400::6812:2885
+
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+
+
+Golismero - Does a fingerprint on the Domain.
+------------------------
+
+  File "/usr/bin/golismero", line 66
+    print "[!] You must use Python version 2.7"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+
+
+Nmap - Checks for Remote Desktop Service over TCP
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:05 EST
+Nmap done: 1 IP address (1 host up) scanned in 2.08 seconds
+
+
+Nikto - Checks for Internal IP Leak.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::ac40:937b, 2606:4700:4400::6812:2885
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 01:05:46 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 239 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 01:05:51 (GMT-5) (5 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nmap - Fast Scan [Only Few Port Checks]
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:05 EST
+Nmap scan report for starbucks.nl (104.18.40.133)
+Host is up (0.0085s latency).
+Other addresses for starbucks.nl (not scanned): 172.64.147.123 2606:4700:4400::6812:2885 2606:4700:4400::ac40:937b
+Not shown: 97 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+8080/tcp open  http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 3.58 seconds
+
+
+WhatWeb - Checks for X-XSS Protection Header
+------------------------
+
+[1m[34mhttp://starbucks.nl[0m [301 Moved Permanently] [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m172.64.147.123[0m], [1mRedirectLocation[0m[[0m[22mhttps://www.starbucks.nl/[0m], [1mTitle[0m[[1m[33m301 Moved Permanently[0m], [1mUncommonHeaders[0m[[0m[22mcf-ray[0m]
+[1m[34mhttps://www.starbucks.nl/[0m [200 OK] [1mCountry[0m[[0m[22mUNITED STATES[0m][[1m[31mUS[0m], [1mFrame[0m, [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mcloudflare[0m], [1mIP[0m[[0m[22m104.18.40.133[0m], [1mScript[0m, [1mStrict-Transport-Security[0m[[0m[22mmax-age=31536000; includeSubDomains; preload[0m], [1mTitle[0m[[1m[33mHomepage | Starbucks[0m], [1mUncommonHeaders[0m[[0m[22mcf-ray,cf-cache-status,link,content-security-policy,x-content-type-options,x-permitted-cross-domain-policies[0m]
+
+
+Nikto - Checks for Apache Expect XSS Header.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::ac40:937b, 2606:4700:4400::6812:2885
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 01:06:44 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 240 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 01:06:48 (GMT-5) (4 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Uniscan - Stress Tests the Domain.
+------------------------
+
+print() on closed filehandle $html at /usr/share/uniscan/Uniscan/Functions.pm line 430.
+Permission denied
+
+
+Checks for SMB Service over UDP
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:06 EST
+Nmap done: 1 IP address (1 host up) scanned in 3.15 seconds
+
+
+Uniscan - Brutes Directories on the Domain.
+------------------------
+
+print() on closed filehandle $html at /usr/share/uniscan/Uniscan/Functions.pm line 430.
+Permission denied
+
+
+Nikto - Checks for Server Issues.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 172.64.147.123, 104.18.40.133, 2606:4700:4400::ac40:937b, 2606:4700:4400::6812:2885
++ Target IP:          172.64.147.123
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 01:06:53 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 239 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 01:06:58 (GMT-5) (5 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+WebDAV - Checks if WEBDAV enabled on Home directory.
+------------------------
+
+OPEN		FAIL:	http://starbucks.nl	Server response: 405 HTTP method not allowed.
+********************************************************
+ Testing DAV connection
+
+
+Uniscan - Checks for LFI, RFI and RCE.
+------------------------
+
+print() on closed filehandle $html at /usr/share/uniscan/Uniscan/Functions.pm line 430.
+Permission denied
+
+
+Nikto - Checks for HTTP PUT DEL.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::ac40:937b, 2606:4700:4400::6812:2885
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 01:07:00 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 240 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 01:07:05 (GMT-5) (5 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nmap - Checks for MySQL DB
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:07 EST
+Nmap done: 1 IP address (1 host up) scanned in 2.17 seconds
+
+
+Nmap [OpenSSL CCS Injection] - Checks only for CCS Injection.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:07 EST
+Nmap scan report for starbucks.nl (172.64.147.123)
+Host is up (0.0078s latency).
+Other addresses for starbucks.nl (not scanned): 104.18.40.133 2606:4700:4400::ac40:937b 2606:4700:4400::6812:2885
+
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.31 seconds
+
+
+Wafw00f - Checks for Application Firewalls.
+------------------------
+
+
+                   [1;97m______
+                  [1;97m/      \
+                 [1;97m(  Woof! )
+                  [1;97m\  ____/                      [1;91m)
+                  [1;97m,,                           [1;91m) ([1;93m_
+             [1;93m.-. [1;97m-    [1;92m_______                 [1;91m( [1;93m|__|
+            [1;93m()``; [1;92m|==|_______)                [1;91m.)[1;93m|__|
+            [1;93m/ ('        [1;92m/|\                  [1;91m(  [1;93m|__|
+        [1;93m(  /  )       [1;92m / | \                  [1;91m. [1;93m|__|
+         [1;93m\(_)_))      [1;92m/  |  \                   [1;93m|__|[0m
+
+                    [1;96m~ WAFW00F : [1;94mv2.2.0 ~[1;97m
+    The Web Application Firewall Fingerprinting Toolkit
+    [0m
+[*] Checking https://starbucks.nl
+[+] The site [1;94mhttps://starbucks.nl[0m is behind [1;96mCloudflare (Cloudflare Inc.)[0m WAF.
+[~] Number of requests: 2
+
+
+Nmap - Checks for IIS WebDAV
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:07 EST
+Nmap scan report for starbucks.nl (104.18.40.133)
+Host is up (0.011s latency).
+Other addresses for starbucks.nl (not scanned): 172.64.147.123 2606:4700:4400::6812:2885 2606:4700:4400::ac40:937b
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 21.46 seconds
+
+
+Host - Checks for existence of IPV6 address.
+------------------------
+
+starbucks.nl has address 172.64.147.123
+starbucks.nl has address 104.18.40.133
+starbucks.nl has IPv6 address 2606:4700:4400::ac40:937b
+starbucks.nl has IPv6 address 2606:4700:4400::6812:2885
+starbucks.nl mail is handled by 0 mxb-00961001.gslb.pphosted.com.
+starbucks.nl mail is handled by 0 mxa-00961001.gslb.pphosted.com.
+starbucks.nl mail is handled by 99 starbucks-nl.mail.protection.outlook.com.
+
+
+Nmap [TELNET] - Checks if TELNET service is running.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:07 EST
+Nmap done: 1 IP address (1 host up) scanned in 2.16 seconds
+
+
+Nmap - Checks for MS-SQL Server DB
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:07 EST
+Nmap done: 1 IP address (1 host up) scanned in 2.13 seconds
+
+
+Nikto - Checks the Domain Headers.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::6812:2885, 2606:4700:4400::ac40:937b
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 01:07:36 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Root page / redirects to: https://www.starbucks.nl/
++ 266 requests: 0 error(s) and 2 item(s) reported on remote host
++ End Time:           2025-01-05 01:07:43 (GMT-5) (7 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nmap [POODLE] - Checks only for Poodle Vulnerability.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:07 EST
+Nmap scan report for starbucks.nl (172.64.147.123)
+Host is up (0.010s latency).
+Other addresses for starbucks.nl (not scanned): 104.18.40.133 2606:4700:4400::ac40:937b 2606:4700:4400::6812:2885
+
+PORT    STATE SERVICE
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 0.33 seconds
+
+
+Nikto - Checks for MS10-070 Vulnerability.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::6812:2885, 2606:4700:4400::ac40:937b
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 01:07:44 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 239 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 01:07:50 (GMT-5) (6 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nikto - Brutes Subdomains.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::ac40:937b, 2606:4700:4400::6812:2885
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 01:07:51 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 239 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 01:07:56 (GMT-5) (5 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nmap - Performs a Full TCP Port Scan
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 01:07 EST
+Stats: 7:40:43 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.65% done; ETC: 22:40 (13:51:26 remaining)
+Stats: 7:40:45 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.66% done; ETC: 22:40 (13:51:26 remaining)
+Stats: 7:40:46 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.66% done; ETC: 22:40 (13:51:27 remaining)
+Stats: 7:46:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.88% done; ETC: 22:47 (13:53:01 remaining)
+
+
+Nmap [FREAK] - Checks only for FREAK Vulnerability.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 08:54 EST
+Failed to resolve "starbucks.nl".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 10.19 seconds
+
+
+Nikto - Checks for HTTP Options on the Domain.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 172.64.147.123, 104.18.40.133, 2606:4700:4400::ac40:937b, 2606:4700:4400::6812:2885
++ Target IP:          172.64.147.123
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 08:54:31 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 250 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 08:54:51 (GMT-5) (20 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nikto - Checks for Shellshock Bug.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::6812:2885, 2606:4700:4400::ac40:937b
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 08:54:51 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ ERROR: Error limit (20) reached for host, giving up. Last error: error reading HTTP response
++ Scan terminated: 20 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 09:02:23 (GMT-5) (452 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nmap - Checks for Remote Desktop Service over UDP
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:02 EST
+Nmap scan report for starbucks.nl (104.18.40.133)
+Host is up.
+Other addresses for starbucks.nl (not scanned): 172.64.147.123 2606:4700:4400::ac40:937b 2606:4700:4400::6812:2885
+
+PORT     STATE         SERVICE
+3389/udp open|filtered ms-wbt-server
+
+Nmap done: 1 IP address (1 host up) scanned in 2.33 seconds
+
+
+Wapiti - Checks for SQLi, RCE, XSS and Other Vulnerabilities
+------------------------
+
+usage: wapiti [-h] [-u URL] [--scope {page,folder,domain,url,punk}]
+              [-m MODULES_LIST] [--list-modules] [--update] [-l LEVEL]
+              [-p PROXY_URL] [--tor] [-a CREDENTIALS]
+              [--auth-type {basic,digest,kerberos,ntlm,post}] [-c COOKIE_FILE]
+              [--skip-crawl] [--resume-crawl] [--flush-attacks]
+              [--flush-session] [--store-session PATH] [--store-config PATH]
+              [-s URL] [-x URL] [-r PARAMETER] [--skip PARAMETER] [-d DEPTH]
+              [--max-links-per-page MAX] [--max-files-per-dir MAX]
+              [--max-scan-time SECONDS] [--max-attack-time SECONDS]
+              [--max-parameters MAX] [-S FORCE] [-t SECONDS] [-H HEADER]
+              [-A AGENT] [--verify-ssl {0,1}] [--color] [-v LEVEL] [-f FORMAT]
+              [-o OUPUT_PATH] [--external-endpoint EXTERNAL_ENDPOINT_URL]
+              [--internal-endpoint INTERNAL_ENDPOINT_URL]
+              [--endpoint ENDPOINT_URL] [--no-bugreport] [--version]
+wapiti: error: one of the arguments -u/--url --list-modules --update is required
+
+     __    __            _ _   _ _____
+    / / /\ \ \__ _ _ __ (_) |_(_)___ /
+    \ \/  \/ / _` | '_ \| | __| | |_ \
+     \  /\  / (_| | |_) | | |_| |___) |
+      \/  \/ \__,_| .__/|_|\__|_|____/
+                  |_|                 
+Wapiti-3.0.4 (wapiti.sourceforge.io)
+
+
+Nmap - Performs a Full UDP Port Scan
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:02 EST
+
+
+Nmap - Checks for SNMP Service
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:14 EST
+Failed to resolve "starbucks.nl".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 10.08 seconds
+
+
+Uniscan - Checks for robots.txt & sitemap.xml
+------------------------
+
+print() on closed filehandle $html at /usr/share/uniscan/Uniscan/Functions.pm line 430.
+Permission denied
+
+
+Checks for SMB Service over TCP
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:14 EST
+Nmap done: 1 IP address (1 host up) scanned in 3.15 seconds
+
+
+Nmap [STUXNET] - Checks if the host is affected by STUXNET Worm.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:14 EST
+Failed to resolve "starbucks.nl".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 10.17 seconds
+
+
+Nmap [Slowloris DoS] - Checks for Slowloris Denial of Service Vulnerability.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:14 EST
+Failed to resolve "starbucks.nl".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 10.17 seconds
+
+
+Nmap [XSS Filter Check] - Checks if XSS Protection Header is present.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:14 EST
+Failed to resolve "starbucks.nl".
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 10.17 seconds
+
+
+Nikto - Enumerates CGI Directories.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 172.64.147.123, 104.18.40.133, 2606:4700:4400::6812:2885, 2606:4700:4400::ac40:937b
++ Target IP:          172.64.147.123
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 09:14:48 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ 262 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 09:14:52 (GMT-5) (4 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nikto - Checks for Injectable Paths.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 104.18.40.133, 172.64.147.123, 2606:4700:4400::6812:2885, 2606:4700:4400::ac40:937b
++ Target IP:          104.18.40.133
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 09:15:03 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 240 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 09:15:07 (GMT-5) (4 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+Nikto - Checks if Server is Outdated.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 172.64.147.123, 104.18.40.133, 2606:4700:4400::ac40:937b, 2606:4700:4400::6812:2885
++ Target IP:          172.64.147.123
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 09:15:08 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 239 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 09:15:11 (GMT-5) (3 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+DNSMap - Brutes Subdomains.
+------------------------
+
+
+
+Uniscan - Checks for XSS, SQLi, BSQLi & Other Checks.
+------------------------
+
+print() on closed filehandle $html at /usr/share/uniscan/Uniscan/Functions.pm line 430.
+Permission denied
+
+
+Nmap [FTP] - Checks if FTP service is running.
+------------------------
+
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-05 09:24 EST
+Nmap done: 1 IP address (1 host up) scanned in 7.16 seconds
+
+
+Nikto - Performs SSL Checks.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ 0 host(s) tested
+
+
+Uniscan - Brutes for Filenames on the Domain.
+------------------------
+
+print() on closed filehandle $html at /usr/share/uniscan/Uniscan/Functions.pm line 430.
+Permission denied
+
+
+Nikto - Checks for any interesting files on the Domain.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 172.64.147.123, 104.18.40.133, 2606:4700:4400::6812:2885, 2606:4700:4400::ac40:937b
++ Target IP:          172.64.147.123
++ Target Hostname:    starbucks.nl
++ Target Port:        80
++ Start Time:         2025-01-05 09:25:32 (GMT-5)
+---------------------------------------------------------------------------
++ Server: cloudflare
++ Root page / redirects to: https://www.starbucks.nl/
++ 549 requests: 0 error(s) and 0 item(s) reported on remote host
++ End Time:           2025-01-05 09:29:29 (GMT-5) (237 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+WordPress Checker - Checks for WordPress Installation.
+------------------------
+
+--2025-01-05 09:29:29--  http://starbucks.nl/wp-admin
+Resolving starbucks.nl (starbucks.nl)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘starbucks.nl’
+
+
