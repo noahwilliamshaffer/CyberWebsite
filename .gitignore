@@ -1,0 +1,19 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor Folders
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary directories
+temp/
+tmp/
+
+# Old directory names (to prevent accidental recreation)
+vcard-personal-portfolio/
+Noah_Shaffer_Portfolio/
+
+# Netlify local files
+.netlify/ 
